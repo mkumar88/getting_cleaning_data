@@ -76,7 +76,7 @@ colnames(data_measure) <- gsub("BodyBody","Body",colnames(data_measure))
 data_summary <- data_measure %>% group_by(subject,activityname) %>% summarise_all(funs(mean))
 
 #Creating the output file for the tidy data
-write.table(data_summary,"Project_Tidy Data.txt")
+write.table(data_summary,"Project_Tidy Data.txt",row.names = FALSE)
 
 
 
