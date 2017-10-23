@@ -12,10 +12,8 @@ A full description of the data used in this project can be found at [The UCI Mac
 [Source data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ### Attribute Information
-For each record in the dataset it is provided: 
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
-- Triaxial Angular velocity from the gyroscope. 
-- A 561-feature vector with time and frequency domain variables. 
+For each record in the dataset the following data is provided: 
+- A 561-feature vector with time and frequency domain variables (*the measurements*)
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
@@ -50,8 +48,8 @@ Match the activitycode in *data_measure* with *activity_labels* to include the d
 ### Section 4. Appropriately label the data set with descriptive activity names.
 Use **gsub** to clean up the data labels.
 Changes:
-1. Replace the columns starting with a t to start with time.
-1. Replace the columns starting with a f to start with freq.
+1. Replace the columns starting with a **t** to start with time.
+1. Replace the columns starting with a **f** to start with freq.
 1. Remove parentheses from all column names
 1. Replace "-" with "." in all column names
 1. Correct column names in the freq. section with an unnecessary repetition of the word "Body", e.g. *freq.BodyBodyGyroMag.std* corrected to *freq.BodyGyroMag.std*
