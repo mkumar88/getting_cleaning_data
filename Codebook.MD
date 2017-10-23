@@ -45,7 +45,7 @@ Steps
 ### Section 3. Use descriptive activity names to name the activities in the data set
 Match the activitycode in *data_measure* with *activity_labels* to include the descriptive activity names
 
-### Section 4. Appropriately label the data set with descriptive activity names.
+### Section 4. Appropriately label the data set with descriptive variable names.
 Use **gsub** to clean up the data labels.
 Changes:
 1. Replace the columns starting with a **t** to start with time.
