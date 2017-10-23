@@ -58,6 +58,6 @@ Now all column names are in the format:
 **freq/time.MetricName.mean/std.X/Y/Z(optional)**
 
 ### Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
-1. Use the **summary_all** function to create the new tidy data set with the average of each variable for each activity and each subject
-1. Use the **write.table** function to write the output into a *.txt* file
+1. Use the **summary_all** function to create the new tidy data set with the average of each variable for each activity and each subject - write this to variable *data_summary*
+1. Use the **write.table** function to *data_summary* into a *.txt* file
 
